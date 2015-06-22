@@ -1,0 +1,8 @@
+#!/bin/bash
+hora=$(date +%H)
+case $hora in
+  0? | 1[01]) echo "Bom dia";;
+  1[2-7])echo "Boa tarde";;
+  *) echo "Boa noite";;
+esac
+exit 
